@@ -17,10 +17,6 @@ TODO
 
 TODO
 
-## Building
-
-TODO
-
 ## Running
 
 TODO
@@ -34,7 +30,7 @@ Date | Appointment
 2024-01-19 | Interim Report
 2024-03-07 | Final Report
 
-We hold a weekly meeting every Friday from 11 am to 3 pm.
+We hold a weekly meeting every Tuesday from 11 am to 3 pm.
 
 ### Gantt-Chart
 
