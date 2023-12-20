@@ -1,27 +1,18 @@
-Projektplantitel/Project plan title:
-1. "Rhythmic Resonance: Unveiling the Beat with Automated BPM Extraction"
-2. "Rhythmic Insight: Automated Beat Detection and BPM Analysis Framework" diese6
-
-Kurzbeschreibung/Brief description:
+//Projektplantitel/Project plan title:
+"Rhythmic Insight: Automated Beat Detection and BPM Analysis Framework" 
+------------------------------------------------
+//Kurzbeschreibung/Brief description:
 Das Projekt „Projekttitel“ konzentriert sich darauf, den musikalischen Takt in einer implementierten Musikdatei mithilfe einer eigens entwickelten Matlab-Anwendung herauszufiltern. Durch die Anwendung der eingesetzten Algorithmen analysieren wir das Audiosignal, um potenzielle Beat-Verläufe zu identifizieren. Unser Ziel ist es, einen Einblick in die automatisierte Beat-Erkennung zu geben und die vielseitige Anwendbarkeit von Matlab als Plattform für musikalische Analysen zu demonstrieren. Nutzer können ihre Musikdateien in das Programm integrieren, um Einblick in die rhythmische Struktur ihrer Musik zu erhalten.
+
 The project "Project Title" focuses on extracting the musical rhythm from an integrated music file using a specially developed Matlab application. By applying the algorithms at hand, we analyze the audio signal to identify potential beat progressions. Our objective is to provide insights into automated beat detection and showcase the versatile applicability of Matlab as a platform for musical analyses. Users have the ability to seamlessly integrate their music files into the program, gaining insights into the rhythmic structure of their music.
+------------------------------------------------
+//Anforderungen/Demands:
+Die Anforderungen für die Beat Detection umfassen verschiedene Aspekte. Zunächst soll das Programm in der Lage sein, Audiodateien einzulesen, um auf Basis dieser Dateien die Beat Detection durchzuführen. Hierbei steht im Fokus, einen Algorithmus zu implementieren, der den Beat anhand von Lautstärkeunterschieden im Audiosignal differenziert erkennt.
+Ein weiterer wesentlicher Punkt ist die Erstellung eines grafischen Outputs, beispielsweise in Form eines Diagramms oder einer Visualisierung, der die erkannten Beats und deren spezifische Eigenschaften darstellt. Diese grafische Darstellung ermöglicht eine übersichtliche Analyse der rhythmischen Struktur.
+Die Anpassungsfähigkeit des Programms spielt ebenfalls eine zentrale Rolle. Es soll in der Lage sein, die Beat Detection auf verschiedene Musikgenres anzuwenden und somit flexibel und vielseitig einsetzbar sein.
+Zusätzlich besteht die Option, das Programm mit Echtzeitfähigkeit auszustatten, was dem Nutzer die Möglichkeit bietet, die Beat Detection live während der Wiedergabe von Audiodateien zu verfolgen. Diese Echtzeitoption trägt dazu bei, eine unmittelbare Rückmeldung und eine interaktive Erfahrung bei der musikalischen Analyse zu ermöglichen.
 
-Anforderungen/Demands:
-Das Projekt "Projekttitel" zielt darauf ab, die Takterkennung von Audiodateien im Techno-Genre zu ermöglichen. Im weiteren Verlauf der Entwicklung soll die Anwendung auch die Erkennung von Audiodateien im Jazz-Genre unterstützen. (Optional: Grundlegend für das Programm ist die Echtzeitfähigkeit, um dem Nutzer eine sofortige Rückmeldung zu bieten. (Matlab-Erweiterung: Simulink Real-Time))
-Zusätzlich zu den Grundanforderungen sollen flexible Dateiformatkompatibilität und adaptive Algorithmen implementiert werden. Dies gewährleistet nicht nur eine breitere Akzeptanz von verschiedenen Audioformaten, sondern auch eine Anpassungsfähigkeit an unterschiedliche Musikstile für präzisere Takterkennungen.
-Die Software soll zudem in der Lage sein, mit variablen Tempoänderungen in den Musikstücken umzugehen, um eine zuverlässige Performance zu gewährleisten.
-Exportfunktionen werden integriert, um dem Nutzer die Möglichkeit zu geben, analysierte Daten für weitere Anwendungen oder Referenzen zu verwenden. (Durch Filteroptionen werden störende Elemente in den Audiodateien minimiert, um die Qualität der Takterkennung zu verbessern.)
-Die Echtzeit-Visualisierung des erkannten Beats bietet dem Nutzer eine unmittelbare Rückmeldung und ermöglicht eine intuitive Interaktion mit der musikalischen Analyse.
-1.	Audiodatei einlesen
-2.	Beaterkennung (Lautstärke differenzieren)
-3.	Graph mit Eigenschaften
-4.	Verschiedene Genre
-5.	Echtzeitfähigkeit optional
-
-
-
-
-The "Project Title" aims to recognize the beats in Techno music files. As we develop further, the application will also learn to identify beats in Jazz music files. The key feature of the program is that it gives you feedback right away (using the Matlab extension: Simulink Real-Time).
-Apart from the basics, we'll make sure the program can work with different types of music files and adjust to different styles of music. This means it will be better at figuring out the beats in your music.
-The program will also handle it when the speed of the music changes. This way, you can rely on it to work well all the time. We'll add a feature that lets you save the information you get, so you can use it for other things later.
-We're also making sure that the program can ignore unwanted sounds in the music files, so it's better at finding the beats you want. And you'll be able to see the beats in real-time, which means you get feedback right away and can easily interact with the musical analysis.
+The requirements for Beat Detection encompass various aspects. Firstly, the program should have the capability to read audio files and conduct Beat Detection based on these files. The focus here is on implementing an algorithm that differentiates and recognizes the beat by considering volume variations in the audio signal.
+Another crucial point involves creating a graphical output, such as a diagram or visualization, that illustrates the detected beats and their specific characteristics. This graphical representation facilitates a clear analysis of the rhythmic structure.
+The adaptability of the program also plays a central role. It should be capable of applying Beat Detection to different music genres, ensuring flexibility and versatility in its application.
+Additionally, there is the option to equip the program with real-time functionality, allowing users to track Beat Detection live during the playback of audio files. This real-time feature contributes to providing immediate feedback and an interactive experience in musical analysis.
