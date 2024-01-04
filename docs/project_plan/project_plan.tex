@@ -1,0 +1,339 @@
+\documentclass[a4paper,12pt,oneside]{article}
+\usepackage{caption}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{easyReview}
+\usepackage{pgfgantt}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=30mm,
+	right=20mm,
+	top=15mm,
+	bottom=10mm,
+	heightrounded,
+	textheight=245mm,
+	textwidth=160mm,
+	includeheadfoot,
+	headsep=10mm,
+	footskip=10mm,
+	headheight=14.599pt
+}
+
+\def\tightlist{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{1cm}
+  
+  {\Large\textbf{Rhythmic Insight}}\\[0.5cm]
+  {\large\textit{Automated Beat Detection and BPM Analysis Framework}}\\[2cm]
+  
+  {\large by Sven Fuchs and Joshua Reichmann}\\[1cm]
+  
+  \vfill
+  \begin{minipage}{0.8\textwidth}
+  This project plan outlines the necessary steps to complete the project
+  on time. It includes a brief description of the content, solution
+  requirements, necessary sub-steps, and a schedule.
+  \end{minipage}
+  
+  \vfill
+  
+  {\large \today}
+\end{titlepage}
+
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\textsl{\leftmark}}
+\fancyfoot[C]{\thepage}
+\setcounter{page}{1}
+
+\section{Brief description}
+
+The `Rhythmic Insight' project is an academic undertaking that focuses
+on developing a MATLAB-based application to analyze audio tracks and
+determine their beats per minute (BPM). The project is primarily
+concerned with extracting musical rhythm from integrated music files,
+using a range of digital signal processing techniques such as Discrete
+Wavelet Transforms (DWT) and auto-correlation.
+
+The aim of this project is to investigate automated beat detection and
+demonstrate the suitability of MATLAB as a platform for conducting
+musical analyses. Users can input their music files into the
+application, which will analyze the audio signals to identify potential
+beat progressions and calculate the tempo of the track. The software is
+designed to process audio input in segments, applying a series of
+mathematical operations to isolate the rhythmic components and determine
+the beats per minute (BPM) for each segment.
+
+A crucial aspect of this project is the utilization of median
+calculation to derive the overall BPM across all measured segments. This
+method is expected to improve the reliability and accuracy of the BPM
+measurement, especially in tracks with varying tempos or complex
+rhythmic structures. Additionally, the application will offer users a
+graphical representation of the auto-correlation of the processed
+signal, providing a visual interpretation of the rhythmic patterns and
+tempo fluctuations.
+
+The project plan will outline the phases of design, implementation,
+testing and deployment of the software. It will also address potential
+challenges and propose strategies to mitigate them. The project aims to
+deliver an efficient and functional tool for BPM detection, contributing
+to the field of musical analysis and demonstrating the capabilities of
+MATLAB for signal processing applications.
+
+\section{Aims of the project}
+
+The final aims of the `Rhythmic Insight' project should encapsulate the
+broad goals of the software while remaining attainable for a student
+group. The following are some general aims for the software:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+    \textbf{Accurate BPM Detection}: The aim of this project is to develop an
+  algorithm that can precisely detect the BPM of various music genres.
+  The target is to achieve a high level of accuracy, which can be
+  considered \emph{appropriate} for academic projects. It is important
+  to note that the goal is not perfection, but rather a consistent and
+  reliable analysis.
+\item
+  \textbf{Handling of Varied Musical Structures}: The software must be capable of
+  processing both simple and complex rhythmic structures, including
+  straightforward beats and more intricate patterns found in genres with
+  fluctuating tempos and intricate rhythms.
+\item
+  \textbf{User-Friendly Interface}: Design a user interface that is intuitive and
+  easy for users to navigate. The interface should allow users to upload
+  audio files, initiate analysis, and view results in a clear and
+  understandable format.
+\item
+  \textbf{Efficient Processing}: The objective is for the software to efficiently
+  process audio files, optimizing for reasonable analysis times without
+  sacrificing accuracy. It should be able to analyze a standard-length
+  track in a practical time frame for users.
+\item
+  \textbf{Adaptability and Scalability}: The software should be designed with
+  adaptability in mind, allowing for future enhancements and additions.
+  It should be structured in a way that new methods or improvements can
+  be integrated without extensive overhauls.
+\item
+  \textbf{Educational Value}: The project should have educational value by
+  providing clear insights into digital signal processing, rhythm
+  analysis, and software development. Thorough documentation should
+  explain the methods, algorithms, and design choices made.
+\item
+  \textbf{Robustness and Reliability}: The software should be designed to be
+  robust, capable of handling various input types and qualities with
+  minimal errors or failures. It should consistently produce accurate
+  results across multiple runs on the same input.
+\item
+  \textbf{Testing and Validation}: Conduct comprehensive testing on a variety of
+  music tracks to validate the software's performance. Document the
+  testing process and results to provide transparency and understanding
+  of the software's capabilities and limitations.
+\end{enumerate}
+
+These aims provide a broad framework for developing the `Rhythmic
+Insight' software. The project aims to create a useful, educational, and
+reliable tool for detecting BPM and analyzing music.
+
+\section{Roadmap}
+
+The `Rhythmic Insight' project comprises a series of progressively
+complex objectives aimed at developing a comprehensive understanding of
+musical tempo and rhythm through signal processing techniques. The
+following are the outlined objectives for the project:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Basic Beat Detection in Simple Rhythms:
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Objective}: To develop an initial capability of the software
+    to detect the BPM of tracks with simple, consistent beats such as
+    those found in techno music.
+  \item
+    \textbf{Approach}: Implement an algorithm to analyze the energy of the
+    audio signal and identify peaks corresponding to beats. This will
+    involve setting a threshold to distinguish between the beats and other
+    parts of the audio signal.
+  \end{itemize}
+
+\setcounter{enumi}{1}
+\item
+  Enhancement of Beat Detection Accuracy:
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Objective}: To refine the beat detection process for greater
+    accuracy, enabling the software to detect beats reliably across a
+    wider range of simple rhythmic patterns.
+  \item
+    \textbf{Approach}: Improve the energy analysis algorithm to adapt to
+    different energy levels and incorporate a smoothing mechanism to
+    reduce false positives and negatives.
+  \end{itemize}
+
+\setcounter{enumi}{2}
+\item
+  Introduction of Auto-Correlation for Complex Rhythms:
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Objective}: To extend the software's capabilities to handle
+    more complex rhythms, such as those found in jazz or classical music,
+    which may have varying tempos and more intricate beat structures.
+  \item
+    \textbf{Approach}: Implement an auto-correlation function to analyze
+    the time intervals between beats, accommodating for variations and
+    irregularities in the rhythm.
+  \end{itemize}
+
+\setcounter{enumi}{3}
+\item
+  Multi-Level Signal Decomposition:
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Objective}: To analyze tracks with multiple instruments and
+    layered rhythms, extracting and isolating the beat from a complex
+    mixture of sounds.
+  \item
+    \textbf{Approach}: Use Discrete Wavelet Transforms (DWT) to decompose
+    the audio signal into various frequency components and analyze each
+    one for rhythmic information.
+  \end{itemize}
+
+\setcounter{enumi}{4}
+\item
+  Temporal Dynamic Analysis:
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Objective}: To detect changes in tempo and rhythm over time
+    within a single track, identifying transitions and variations.
+  \item
+    \textbf{Approach}: Implement a sliding window technique to perform
+    beat detection over short, overlapping segments of the track, allowing
+    the detection of changes in tempo and rhythm throughout the piece.
+  \end{itemize}
+
+\setcounter{enumi}{5}
+\item
+  User Interface Development:
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Objective}: To create an intuitive and user-friendly interface
+    that allows users to easily input their audio files and understand the
+    analysis provided by the software.
+  \item
+    \textbf{Approach}: Develop a (\emph{optional}: graphical) user
+    interface (GUI) that provides visual feedback, such as waveforms and
+    tempo graphs, and allows for easy navigation and operation of the
+    software.
+  \end{itemize}
+
+\setcounter{enumi}{6}
+\item
+  Validation and Testing:
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Objective}: To ensure the reliability and accuracy of the BPM
+    detection across a variety of music genres and recording qualities.
+  \item
+    \textbf{Approach}: Conduct extensive testing using a diverse set of
+    audio tracks, comparing the software's BPM output with manually
+    verified values and adjusting the algorithms as necessary to improve
+    accuracy.
+  \end{itemize}
+\end{enumerate}
+
+The `Rhythmic Insight' project aims to create a versatile and reliable
+tool for analyzing musical tempo and rhythm, contributing valuable
+insights and methodologies to the field of digital music analysis.
+
+\section{Schedule}
+
+To manage and track the progress of the `Rhythmic Insight' project, a
+Gantt chart is presented below. The chart outlines the timeline, key
+milestones, and dependencies of various tasks, providing a visual
+roadmap for the project's development from inception to completion.
+
+\begin{ganttchart}[hgrid, vgrid, x unit=0.6cm]{1}{13}
+\gantttitle{Calendar Weeks}{12}
+\ganttnewline
+\gantttitle{50}1
+\gantttitle{51}1
+\gantttitle{52}1
+\gantttitle{01}1
+\gantttitle{02}1
+\gantttitle{03}1
+\gantttitle{04}1
+\gantttitle{05}1
+\gantttitle{06}1
+\gantttitle{07}1
+\gantttitle{08}1
+\gantttitle{09}1
+\gantttitle{10}1
+\ganttnewline
+\ganttbar{Project Plan (21.12.) - B}{1}{1}
+\ganttnewline
+\ganttbar{Brief Description - S}{1}{1}
+\ganttnewline
+\ganttbar{Aims - S}{1}{1}
+\ganttnewline
+\ganttbar{Roadmaps - J}{1}{1}
+\ganttnewline
+\ganttbar{Schedule - J}{1}{1}
+\ganttnewline
+\ganttbar{Development - B}{3}{3}
+\ganttnewline
+\ganttbar{Basic Beat Detection - S}{3}{3}
+\ganttnewline
+\ganttbar{Accuracy Enhancement - J}{3}{3}
+\ganttnewline
+\ganttbar{Auto-Correlation - J}{5}{5}
+\ganttnewline
+\ganttbar{Multi-Level Signal Decomp. - S}{5}{5}
+\ganttnewline
+\ganttbar{Temporal Dynamic Analysis - J}{7}{7}
+\ganttnewline
+\ganttbar{UI - S}{7}{7}
+\ganttnewline
+\ganttbar{Validation - B}{9}{9}
+\ganttnewline
+\ganttbar{Documentation - B}{4}{4}
+\ganttnewline
+\ganttbar{Interim Report (19.01.) - B}{6}{6}
+\ganttnewline
+\ganttbar{Final Report (07.03.) - B}{11}{11}
+\ganttnewline
+\ganttbar{Backup - B}{13}{13}
+\ganttnewline
+\end{ganttchart}
+
+\hfill \textit{B = both, J = Joshua, S = Sven}
+\newline
+
+The Gantt chart above serves as a strategic planning tool to ensure that
+all project components are addressed in a timely and orderly manner. It
+will be instrumental in monitoring progress, managing resources, and
+achieving the set objectives within the designated time frame. Regular
+reviews and updates to the Gantt chart will be conducted to reflect any
+changes or developments as the project advances.
+
+\end{document}

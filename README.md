@@ -2,15 +2,10 @@
 
 A project for SMP in Matlab.
 
-## Brief Description
-
-TODO
-
 ## Directory Structure
 
 - [src/](./src/) contains all source code of the project.
 - [docs/](./docs/) contains documentation written in LaTeX.
-- [orga/](./orga/) contains documents about our internal organization.
 - [assets/](./assets/) contains exported images and PDFs to be displayed on this page.
 
 ## Cloning
@@ -31,7 +26,3 @@ Date | Appointment
 2024-03-07 | Final Report
 
 We hold a weekly meeting every Tuesday from 11 am to 3 pm.
-
-### Gantt-Chart
-
-![Gantt](./assets/Gantt.png)
