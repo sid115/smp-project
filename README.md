@@ -21,7 +21,7 @@ git clone https://github.com/sid115/smp-project.git
 Navigate to `smp-project/src` and run:
 
 ```bash
-octave beatDetect.m "/path/to/file.wav"
+octave main.m "/path/to/file.wav"
 ```
 
 ## Analysis
@@ -33,10 +33,14 @@ A plot showing the energy of the signal over the sample index with markers for e
 The estimated BPM is printed in your CLI:
 
 ```bash
-$ octave beatDetect.m "../assets/techno.wav"
+$ octave main.m "../assets/techno.wav"
 
 Estimated BPM: 147
 ```
+
+## TODO
+
+- test detecting peaks in ACF
 
 ## Deadlines / Dates
 
