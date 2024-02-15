@@ -28,7 +28,7 @@ octave beatDetect.m "/path/to/file.wav"
 
 A plot showing the energy of the signal over the sample index with markers for each detected beat is exported to [assets/](../assets):
 
-![DetectedPeaksPlot.png](../assets/DetectedPeaksPlot.png)
+![DetectedPeaksPlot.png](./assets/DetectedPeaksPlot.png)
 
 The estimated BPM is printed in your CLI:
 
