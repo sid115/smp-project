@@ -10,11 +10,33 @@ A project for SMP in Matlab.
 
 ## Cloning
 
-TODO
+Clone using HTTPS:
+
+```bash
+git clone https://github.com/sid115/smp-project.git
+```
 
 ## Running
 
-TODO
+Navigate to `smp-project/src` and run:
+
+```bash
+octave beatDetect.m "/path/to/file.wav"
+```
+
+## Analysis
+
+A plot showing the energy of the signal over the sample index with markers for each detected beat is exported to [assets/](../assets):
+
+![DetectedPeaksPlot.png](../assets/DetectedPeaksPlot.png)
+
+The estimated BPM is printed in your CLI:
+
+```bash
+$ octave beatDetect.m "../assets/techno.wav"
+
+Estimated BPM: 147
+```
 
 ## Deadlines / Dates
 
