@@ -1,13 +1,10 @@
-function [filteredSignal, fs] = readAndPreprocess(wavFilePath)
+function [filteredSignal] = preprocess(signal, fs)
 
 % Static variables / constants
 CUTOFF_FREQUENCY = 300; % Low-pass filter cutoff frequency in Hz
 PASSBAND_RIPPLE = 3; % Passband ripple in dB for the Butterworth filter
 STOPBAND_ATTENUATION = 40; % Stopband attenuation in dB for the Butterworth filter
 FILTER_ORDER_LIMIT = 5; % Maximum order for the Butterworth filter
-
-% Read WAV file
-[signal, fs] = audioread(wavFilePath); % Read audio data and sampling frequency from WAV file
 
 % Convert stereo to mono if necessary
 if size(signal, 2) > 1

@@ -19,20 +19,27 @@ else
     pkg load signal;
 end
 
+% Read WAV file
+[signal, fs] = audioread(wavFilePath); % Read audio data and sampling frequency from WAV file
+
 % Read the audio file and preprocess it
-[filteredSignal, fs] = readAndPreprocess(wavFilePath);
+[filteredSignal] = preprocess(signal, fs);
 
 % Calculate the energy signal and smooth it
 [smoothedEnergySignal] = calculateEnergy(filteredSignal, fs);
 
-% Use the auto-correlation function to identify the periodicity in the signal
-% TODO: [lag, acf] = autoCorrelationAnalysis(signal, fs);
 
-% Detect peaks and calculate the BPM
-[filteredBPM, filteredLocations] = detectPeaksAndCalculateBPM(smoothedEnergySignal, fs);
+% Use the auto-correlation function to identify the periodicity in the signal
+[lag, acf] = autoCorrelation(smoothedEnergySignal, fs);
+
+% Detect peaks
+[peaks, locations] = detectPeaks(acf, lag, fs);
+
+% Calculate the BPM
+bpm = calculateBPM(locations);
 
 % Display the estimated BPM
-fprintf('Estimated BPM: %d\n', round(filteredBPM));
+fprintf('Estimated BPM: %d\n', round(bpm));
 
 % Create a figure window but make it invisible
 fig = figure('visible', 'off');
@@ -40,7 +47,8 @@ fig = figure('visible', 'off');
 % Plot the smoothed energy signal and detected peaks
 plot(smoothedEnergySignal); % Plot smoothed energy signal
 hold on;
-plot(filteredLocations, smoothedEnergySignal(filteredLocations), 'r*'); % Plot filtered detected peaks
+indicesForPlotting = round(locations * fs) + 1;
+plot(indicesForPlotting, smoothedEnergySignal(indicesForPlotting), 'r*');
 xlabel('Sample Number'); % Label x-axis
 ylabel('Energy'); % Label y-axis
 title('Detected Peaks on Energy Signal'); % Title for the plot
