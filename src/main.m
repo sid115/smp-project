@@ -3,14 +3,21 @@
 % Include configuration file
 source('config.m');
 
-% Open a GUI dialog to select a WAV file
-[FileName, PathName] = uigetfile('*.wav', 'Select the WAV file');
-if isequal(FileName,0) || isequal(PathName,0)
-   disp('User canceled the operation.');
-   return;
+% Check if any arguments are passed
+args = argv();
+if length(args) >= 1
+  % Use the first argument as the WAV file path if provided
+  wavFilePath = args{1};
 else
-   wavFilePath = fullfile(PathName, FileName);
-   disp(['User selected: ', wavFilePath]);
+  % Open a GUI dialog to select a WAV file if no arguments are provided
+  [fileName, pathName] = uigetfile('*.wav', 'Select the WAV file');
+  if isequal(fileName,0) || isequal(pathName,0)
+     disp('User canceled the operation.');
+     return;
+  else
+     wavFilePath = fullfile(pathName, fileName);
+     disp(['User selected: ', wavFilePath]);
+  end
 end
 
 % Check if the 'signal' package is installed and load it
