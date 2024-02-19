@@ -47,22 +47,3 @@ bpm = calculateBPM(locations);
 
 % Display the estimated BPM
 fprintf('Estimated BPM: %d\n', round(bpm));
-
-% Create a figure window but make it invisible
-fig = figure('visible', 'off');
-
-% Plot the smoothed energy signal and detected peaks
-plot(smoothedEnergySignal); % Plot smoothed energy signal
-hold on;
-indicesForPlotting = round(locations * fs) + 1;
-plot(indicesForPlotting, smoothedEnergySignal(indicesForPlotting), 'r*');
-xlabel('Sample Number'); % Label x-axis
-ylabel('Energy'); % Label y-axis
-title('Detected Peaks on Energy Signal'); % Title for the plot
-legend('Smoothed Energy Signal', 'Filtered Detected Peaks'); % Legend for the plot
-
-% Specify the filename and format for the output plot
-print(fig, OUTPUT_FILENAME, '-dpng'); % Save the plot as a PNG file
-
-% Close the figure
-close(fig);
