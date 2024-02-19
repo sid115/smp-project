@@ -3,14 +3,15 @@
 % Include configuration file
 source('config.m');
 
-% Check if any arguments are passed
-args = argv();
-if length(args) < 1
-  disp('Usage: octave beatDetect.m "/path/to/file.wav"');
-  return;
+% Open a GUI dialog to select a WAV file
+[FileName, PathName] = uigetfile('*.wav', 'Select the WAV file');
+if isequal(FileName,0) || isequal(PathName,0)
+   disp('User canceled the operation.');
+   return;
+else
+   wavFilePath = fullfile(PathName, FileName);
+   disp(['User selected: ', wavFilePath]);
 end
-
-wavFilePath = args{1}; % First argument is the WAV file path
 
 % Check if the 'signal' package is installed and load it
 if isempty(pkg('list', 'signal'))
@@ -27,7 +28,6 @@ end
 
 % Calculate the energy signal and smooth it
 [smoothedEnergySignal] = calculateEnergy(filteredSignal, fs);
-
 
 % Use the auto-correlation function to identify the periodicity in the signal
 [lag, acf] = autoCorrelation(smoothedEnergySignal, fs);
