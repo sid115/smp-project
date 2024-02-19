@@ -1,7 +1,7 @@
 function [energySignal] = calculateEnergy(signal, fs)
 
-% Static variables / constants
-SMOOTHING_WINDOW_DURATION = 0.01; % Duration of the smoothing window in seconds
+% Include configuration file
+source('config.m');
 
 % Calculate the energy of the filtered signal
 energySignal = signal.^2; % Square signal to calculate energy

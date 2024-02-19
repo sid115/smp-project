@@ -1,7 +1,7 @@
 % OCTAVE SCRIPT FOR BPM DETECTION
 
-% Static variables / constants
-OUTPUT_FILENAME = '../assets/DetectedPeaksPlot.png'; % Filename for the output plot
+% Include configuration file
+source('config.m');
 
 % Check if any arguments are passed
 args = argv();

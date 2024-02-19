@@ -1,10 +1,7 @@
 function [filteredSignal] = preprocess(signal, fs)
 
-% Static variables / constants
-CUTOFF_FREQUENCY = 300; % Low-pass filter cutoff frequency in Hz
-PASSBAND_RIPPLE = 3; % Passband ripple in dB for the Butterworth filter
-STOPBAND_ATTENUATION = 40; % Stopband attenuation in dB for the Butterworth filter
-FILTER_ORDER_LIMIT = 5; % Maximum order for the Butterworth filter
+% Include configuration file
+source('config.m');
 
 % Convert stereo to mono if necessary
 if size(signal, 2) > 1

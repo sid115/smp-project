@@ -1,8 +1,7 @@
 function [filteredPeaks, filteredLocations] = detectPeaks(acf, lag, fs)
 
-% Constants
-MIN_PEAK_MULTIPLIER = 2; % Multiplier for the minimum peak height
-EXPECTED_BPM = 200; % Expected BPM for calculating minimum samples between beats
+% Include configuration file
+source('config.m');
 
 % Check if the ACF is empty
 if isempty(acf)
