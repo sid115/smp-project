@@ -26,9 +26,10 @@ octave main.m "/path/to/file.wav"
 
 ## Analysis
 
-A plot showing the energy of the signal over the sample index with markers for each detected beat is exported to [assets/](../assets):
+Graphs are exported to [assets/plots/](../assets/plots).
 
-![DetectedPeaksPlot.png](./assets/DetectedPeaksPlot.png)
+![energy.png](./assets/plots/energy.png)
+![peaks.png](./assets/plots/peaks.png)
 
 The estimated BPM is printed in your CLI:
 
@@ -38,9 +39,20 @@ $ octave main.m "../assets/techno.wav"
 Estimated BPM: 147
 ```
 
+Test in bulk with:
+
+```bash
+./testBulk.sh /path/to/wavs
+```
+
+A resulting analysis will be written to stdout. The BPM of every song be written to [output_table.txt](src/output_table.txt).
+
 ## TODO
 
-- test detecting peaks in ACF
+- Roadmap #4
+- Roadmap #5?
+- GUI?
+- Gantt
 
 ## Deadlines / Dates
 
