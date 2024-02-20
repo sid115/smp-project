@@ -24,6 +24,10 @@ Navigate to `smp-project/src` and run:
 octave main.m "/path/to/file.wav"
 ```
 
+## Overview
+
+![FlowChartBD.svg](assets/FlowChartBD.svg)
+
 ## Analysis
 
 Graphs are exported to [assets/plots/](../assets/plots).
