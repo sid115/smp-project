@@ -1,5 +1,3 @@
-% OCTAVE SCRIPT FOR BPM DETECTION
-
 % Include configuration file
 source('config.m');
 
@@ -30,7 +28,7 @@ end
 % Read WAV file
 [signal, fs] = audioread(wavFilePath); % Read audio data and sampling frequency from WAV file
 
-% Read the audio file and preprocess it
+% Preprocess the audio file
 [filteredSignal] = preprocess(signal, fs);
 
 % Calculate the energy signal and smooth it

@@ -1,0 +1,24 @@
+\section{System Requirements}
+
+To ensure the successful execution of the "Rhythmic Inside" beat detection project, the following system requirements must be met:
+
+\begin{itemize}
+    \item \textbf{Operating System:} A Unix-compatible shell environment is required for running the scripts and commands associated with this project. This includes Linux distributions and macOS. Windows users may need to use a compatibility layer like Windows Subsystem for Linux (WSL) or a virtual machine running a Unix-based OS.
+    
+    \item \textbf{Octave Installation:} GNU Octave must be installed on the system. The project is developed and tested with Octave version 8.4.0, but it should be compatible with most recent versions. Octave can be installed from the official package repository of your Linux distribution or from the Octave website for macOS users.
+    
+After installing Octave, ensure that the "signal" package is also installed. This can be done by running the following command in the Octave command line interface:
+
+\lstset{style=MATLABStyle}
+\begin{lstlisting}[caption={Installing signal in MATLAB/Octave}, label=lst]
+pkg install -forge signal
+\end{lstlisting}
+
+This package is essential for processing the audio signals during beat detection.
+    
+    \item \textbf{Audio File Format:} The primary input format supported is WAV files in PCM format. These files provide the uncompressed audio data necessary for accurate beat detection analysis.
+    
+    \item \textbf{FLAC to WAV Conversion:} For users with audio files in FLAC format, a script will be provided to convert these files to the required WAV format. This script also trims the audio files to the first 30 seconds to standardize the analysis duration and reduce processing time. Details on using this script will be discussed in the [where though?].
+\end{itemize}
+
+It is recommended to verify that all system requirements are met before proceeding with the installation and execution of the project to ensure optimal performance and reliability.

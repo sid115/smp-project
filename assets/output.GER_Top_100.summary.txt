@@ -1,0 +1,5 @@
+Average Our BPM: 133.49
+Average Tool BPM: 121.313
+Median Our BPM: 140
+Median Tool BPM: 122.846
+Median Percent Difference: 3.96497%

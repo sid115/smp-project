@@ -1,0 +1,26 @@
+\section{Auto-correlation and Peak Detection}
+
+This section elaborates on the critical stages of auto-correlation and peak detection, instrumental in deducing the beats per minute (BPM) from the preprocessed audio signal.
+
+\subsection{Auto-correlation to Identify Periodicity}
+
+Auto-correlation is deployed to uncover the periodicity within the smoothed energy signal, a pivotal step for rhythm detection. It measures the similarity of the signal with itself at different time lags, highlighting the regular pattern of beats.
+
+\begin{itemize}
+    \item \textbf{Implementation:} Utilizing the \texttt{xcorr} function, the project computes the auto-correlation sequence, efficiently revealing the temporal intervals with high similarity — indicative of the periodic nature of beats.
+    \item \textbf{Algorithm:} The \texttt{xcorr} function internally employs a Fast Fourier Transform (FFT) based approach to compute correlations, offering a computationally efficient method to handle large datasets typical in audio processing.
+\end{itemize}
+
+\subsection{Peak Detection for BPM Estimation}
+
+Upon establishing the periodicity, the project progresses to identify the significant peaks within the auto-correlation function, directly correlating with the beats' timing.
+
+\begin{itemize}
+    \item \textbf{Implementation:} The \texttt{findpeaks} function is invoked to discern the prominent peaks from the auto-correlation sequence, with parameters fine-tuned to discern genuine beat-related peaks from noise.
+    \item \textbf{Algorithm:} \texttt{findpeaks} examines the signal gradient to locate local maxima, with criteria for peak prominence and distance ensuring the detection of distinct, rhythmically relevant peaks.
+    \item \textbf{Rationale:} The choice of \texttt{findpeaks} and its underlying algorithm is predicated on its adeptness at handling varied signal patterns, enabling the discernment of true rhythmic peaks amidst potential signal irregularities.
+\end{itemize}
+
+\subsection{Discussion}
+
+The synergy between auto-correlation and peak detection forms the cornerstone of the BPM estimation. Auto-correlation elucidates the signal's inherent periodicity, laying the groundwork for the precise identification of beats through peak detection. The utilization of \texttt{xcorr} and \texttt{findpeaks}, with their FFT and gradient-based algorithms respectively, underscores the methodological rigor in capturing the essence of rhythm. This approach not only enhances accuracy but also affirms the project's adaptability to the multifaceted nature of audio signals, ensuring reliable BPM estimation across diverse musical genres.

@@ -1,0 +1,47 @@
+\documentclass[a4paper,12pt,oneside]{article}
+
+\usepackage{header}
+
+\pagenumbering{Roman}
+
+\begin{document}
+\pagestyle{fancy}
+
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    {\Large\bfseries Rhythmic Inside: A Beat Detection Project\par}
+    \vspace{0.5cm}
+    {\large Automated Beat Detection and BPM Analysis Framework in Octave/MATLAB\par}
+    
+    \vspace{1.5cm}
+    
+    {\Large Sven Fuchs, Joshua Reichmann\par}
+    \vspace{0.5cm}
+    {\Large 07.03.2024\par}
+    
+    \vfill
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+
+\import{sections/}{introduction.tex}
+\import{sections/}{system_requirements.tex}
+\import{sections/}{structure.tex}
+\import{sections/}{config.tex}
+\import{sections/}{signal_processing.tex}
+\import{sections/}{acf_peak.tex}
+\import{sections/}{testing.tex}
+\import{sections/}{conclusion.tex}
+\import{sections/}{appendices.tex}
+
+\newpage
+\printbibliography
+\listoffigures
+\listoftables
+
+\end{document}

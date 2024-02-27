@@ -1,0 +1,29 @@
+\section{Signal Processing}
+
+The signal processing phase is pivotal in transforming the raw audio input into a form amenable for beat detection. This section details the preprocessing steps, including filtering and energy calculation, and explicates the rationale behind the choice of signal processing techniques.
+
+\subsection{Preprocessing the Audio File}
+
+\subsubsection{Filtering}
+
+The preprocessing commences with applying a low-pass Butterworth filter to attenuate high-frequency components not pertinent to beat detection. This filter is favored for its flat passband, ensuring minimal distortion of relevant frequencies.
+
+\begin{itemize}
+    \item \textbf{Cutoff Frequency:} The \texttt{CUTOFF\_FREQUENCY}, set to 300 Hz, delineates the frequency above which signals are attenuated, chosen to retain fundamental rhythmic components while simplifying the beat detection.
+    \item \textbf{Filter Order:} The \texttt{FILTER\_ORDER\_LIMIT} is configured at 5, balancing the need for a sharp frequency cutoff against minimizing phase distortions.
+\end{itemize}
+
+\subsubsection{Energy Signal Calculation}
+
+Following filtration, the signal's energy is computed over short, overlapping windows, transforming the waveform to highlight rhythmic patterns.
+
+\begin{itemize}
+    \item \textbf{Windowing:} The signal is segmented into windows, within which the amplitude values are squared and summed to yield the energy.
+    \item \textbf{Smoothing:} The energy signal is smoothed (using a window specified by \texttt{SMOOTHING\_WINDOW\_DURATION}, defaulting to 0.01 seconds) to reduce fluctuations and emphasize beats.
+\end{itemize}
+
+\subsection{Discussion on Signal Processing Techniques}
+
+These preprocessing steps serve to distill the audio signal, emphasizing rhythmic beats while mitigating irrelevant frequencies and noise. The Butterworth filter's selection, with its characteristic smooth frequency response, ensures that the filtration process preserves the integrity of beat-related frequencies. The subsequent energy calculation and smoothing further refine the signal, setting the stage for effective beat detection by transforming the audio into a representation where beats manifest as discernible energy peaks. \\
+
+Through these meticulous processing techniques, the project establishes a robust foundation for the reliable identification of beats across diverse music genres, underscoring its utility as a comprehensive beat detection tool.

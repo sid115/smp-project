@@ -18,7 +18,7 @@ git clone https://github.com/sid115/smp-project.git
 
 ## Running
 
-Navigate to `smp-project/src` and run:
+Navigate to `smp-project/src/rhythmic_inside` and run:
 
 ```bash
 octave main.m "/path/to/file.wav"
@@ -30,15 +30,16 @@ octave main.m "/path/to/file.wav"
 
 ## Analysis
 
-Graphs are exported to [assets/plots/](../assets/plots).
+Graphs are exported to [assets/plots/](./assets/plots).
 
 ![energy.png](./assets/plots/energy.png)
 ![peaks.png](./assets/plots/peaks.png)
+![bland_altman.png](./assets/plots/bland_altman.png)
 
 The estimated BPM is printed in your CLI:
 
 ```bash
-$ octave main.m "../assets/techno.wav"
+$ octave main.m "../../assets/techno.wav"
 
 Estimated BPM: 147
 ```
@@ -49,14 +50,17 @@ Test in bulk with:
 ./testBulk.sh /path/to/wavs
 ```
 
-A resulting analysis will be written to stdout. The BPM of every song be written to [output_table.txt](src/output_table.txt).
-
 ## TODO
 
-- Roadmap #4
-- Roadmap #5?
-- GUI?
-- Gantt
+- dwt
+- spectogram
+- docs
+    - testing
+    - plots
+    - more technical details
+    - api?
+- presentation
+    - slidev!
 
 ## Deadlines / Dates
 

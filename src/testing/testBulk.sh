@@ -10,11 +10,6 @@ fi
 output_file="output_table.txt"
 echo "song | our bpm | bpm-tool's bpm" > "$output_file"
 
-# Check if the output file exists, if not, create it with headers
-if [ ! -f "$output_file" ]; then
-    echo "song | bpm |" > "$output_file"
-fi
-
 # Iterate through each file in the directory
 for file in "$1"/*; do
     if [ -f "$file" ]; then
@@ -42,7 +37,9 @@ for file in "$1"/*; do
     fi
 done
 
-# Calculate and print averages, medians, and percent differences
+echo "All data has been processed and saved to $output_file"
+echo "----------------------------------"
+
 awk -F ' | ' '
     NR>1 {
         our_sum+=$3; 
