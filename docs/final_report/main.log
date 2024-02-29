@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.26)  27 FEB 2024 21:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.26)  29 FEB 2024 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1109,29 +1109,29 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-\tf@toc=\write6
-\openout6 = `main.toc'.
+)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+4.
 
-
+(/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 \newpage
-              [1] (./sections/introduction.tex
+l.45 ...Cases and Methodology}{11}{subsection.7.3}
+                                                  % [1])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [2]
+(./sections/introduction.tex
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 7.
-
-(/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+ (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (4.80792pt too wide) in paragraph at lines 18--19
-[]\T1/lmr/m/n/12 Evaluating the al-go-rithm's per-for-mance through rig-or-ous 
-test-ing against es-tab-lished bench-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
@@ -1142,52 +1142,91 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 13.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-3.
-
-(/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (./sections/structure.tex
-[2]
+)
+(./sections/structure.tex [2]
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-) (./sections/config.tex (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+) (./sections/config.tex [3]
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-) [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-) (./sections/signal_processing.tex
+) [4])
+(./sections/signal_processing.tex
 Overfull \hbox (73.76578pt too wide) in paragraph at lines 22--23
 []\T1/lmr/bx/n/12 Smoothing: \T1/lmr/m/n/12 The en-ergy sig-nal is smoothed (us
 -ing a win-dow spec-i-fied by \T1/lmtt/m/n/12 SMOOTHING_WINDOW_DURATION\T1/lmr/
 m/n/12 ,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[5]
+<./images//energy.png, id=324, 875.27pt x 656.4525pt>
+File: ./images//energy.png Graphic file (type png)
+<use ./images//energy.png>
+Package pdftex.def Info: ./images//energy.png  used on input line 31.
+(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
+) (./sections/acf_peak.tex [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \section
+            {Auto-correlation and Peak Detection} <./images//energy.png (PNG co
+py)>]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 9.
+ [7{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-di
+st/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ma
+thex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[8]
+<./images//peaks.png, id=345, 875.27pt x 656.4525pt>
+File: ./images//peaks.png Graphic file (type png)
+<use ./images//peaks.png>
+Package pdftex.def Info: ./images//peaks.png  used on input line 93.
+(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
+ [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.100 
+       <./images//peaks.png (PNG copy)>]) (./sections/testing.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 3.
+ [10]
+<./images//bland_altman_plot.png, id=367, 875.27pt x 656.4525pt>
+File: ./images//bland_altman_plot.png Graphic file (type png)
+<use ./images//bland_altman_plot.png>
+Package pdftex.def Info: ./images//bland_altman_plot.png  used on input line 52
+.
+(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
+ [11])
+(./sections/conclusion.tex [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.4 
+     <./images//bland_altman_plot.png (PNG copy)>]) (./sections/appendices.tex
+[13] (../../src/rhythmic_inside/main.m [14]) [15]
+(../../src/rhythmic_inside/preprocess.m) [16]
+(../../src/rhythmic_inside/calculateEnergy.m) [17]
+(../../src/rhythmic_inside/autoCorrelation.m) [18]
+(../../src/rhythmic_inside/detectPeaks.m [19]) [20]
+(../../src/rhythmic_inside/calculateBPM.m) [21]
+(../../src/rhythmic_inside/config.m)
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[5]) (./sections/acf_peak.tex
-Overfull \hbox (3.56204pt too wide) in paragraph at lines 10--11
-[]\T1/lmr/bx/n/12 Implementation: \T1/lmr/m/n/12 Uti-liz-ing the \T1/lmtt/m/n/1
-2 xcorr \T1/lmr/m/n/12 func-tion, the project com-putes the auto-correlation
- []
-
-) (./sections/testing.tex [6] [7]) (./sections/conclusion.tex [8])
-(./sections/appendices.tex (../../src/rhythmic_inside/main.m [9]) [10]
-(../../src/rhythmic_inside/preprocess.m) [11]
-(../../src/rhythmic_inside/calculateEnergy.m) [12]
-(../../src/rhythmic_inside/autoCorrelation.m) [13]
-(../../src/rhythmic_inside/detectPeaks.m [14]) [15]
-(../../src/rhythmic_inside/calculateBPM.m) [16]
-(../../src/rhythmic_inside/config.m)) [17]
+) [22]
 
 LaTeX Warning: Empty bibliography on input line 43.
 
@@ -1195,38 +1234,40 @@ LaTeX Warning: Empty bibliography on input line 43.
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- (./main.lot)
-\tf@lot=\write8
-\openout8 = `main.lot'.
-
- [18] (./main.aux)
+ [23] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F51C96781F0004EB2CED2907F438C237;6741.
+(rerunfilecheck)             Checksum: 8A9D46DD541788B6EC83240635CEF263;9051.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26107 strings out of 477932
- 452698 string characters out of 5837865
+ 26214 strings out of 477932
+ 454446 string characters out of 5837865
  2159388 words of memory out of 5000000
- 45574 multiletter control sequences out of 15000+600000
- 558004 words of font info for 64 fonts, out of 8000000 for 9000
+ 45636 multiletter control sequences out of 15000+600000
+ 579646 words of font info for 84 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 109i,12n,106p,705b,2156s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,12n,106p,797b,2263s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dis
-t/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/
-lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/tex
-mf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/lm/lmro12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr
-/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (20 pages, 284285 bytes).
+t/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm
+/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/
+texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr
+/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb><
+/usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/f
+onts/type1/public/lm/lmro12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lm
+sy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/lm/lmtt12.pfb>
+Output written on main.pdf (26 pages, 530571 bytes).
 PDF statistics:
- 607 PDF objects out of 1000 (max. 8388607)
- 562 compressed objects within 6 object streams
- 270 named destinations out of 1000 (max. 500000)
- 325 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 775 PDF objects out of 1000 (max. 8388607)
+ 701 compressed objects within 8 object streams
+ 294 named destinations out of 1000 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
 

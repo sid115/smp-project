@@ -1,10 +1,10 @@
 \section{Configuration and Initial Setup}
 
-To get started with the "Rhythmic Inside" beat detection system, follow these steps to set up the environment and configure the application according to your needs.
+To begin using the 'Rhythmic Inside' beat detection system, follow these steps to set up the environment and configure the application to meet your specific needs.
 
 \subsection{Cloning the Repository}
 
-First, clone the project repository from GitHub and navigate to the \texttt{src} directory where the source code is located. Use the following commands in a Unix-compatible shell:
+To begin, clone the project repository from GitHub and navigate to the \texttt{src/rhythmic\_inside} directory where the source code is located. In a Unix-compatible shell, use the following commands:
 
 \lstset{style=ShellStyle}
 \begin{lstlisting}[caption={Cloning from GitHub}, label=lst]
@@ -14,14 +14,14 @@ cd smp-project/src/rhythmic_inside
 
 \subsection{Editing the Configuration File}
 
-The project's behavior can be customized through the \texttt{config.m} file, which contains several predefined constants. While the default values are suitable for most cases, you may wish to adjust these settings to accommodate specific audio characteristics or analysis preferences. Open \texttt{config.m} in a text editor to modify any of the following variables:
+The behavior of the project can be customized by modifying the constants defined in the \texttt{config.m} file. Although the default values are appropriate for most situations, you may need to adjust these settings to match specific audio characteristics or analysis preferences. To modify any of the following variables, open \texttt{config.m} in a text editor:
 
 \begin{itemize}
-    \item \textbf{CUTOFF\_FREQUENCY} (\textit{integer}, Hz): Defines the cutoff frequency for the low-pass filter. Acceptable values depend on the audio content, but it is typically set to 300 Hz to remove high-frequency noise not relevant to the beat detection process.
+    \item \textbf{CUTOFF\_FREQUENCY} (\textit{integer}, Hz): The cutoff frequency for the low-pass filter is defined in order to remove high-frequency noise that is not relevant to the beat detection process. Acceptable values depend on the audio content, but it is typically set to 300 Hz.
     
-    \item \textbf{EXPECTED\_BPM} (\textit{integer}, BPM): Sets the expected Beats Per Minute, which influences the calculation of minimum samples between beats. This should reflect the average tempo of the audio files being analyzed.
+    \item \textbf{EXPECTED\_BPM} (\textit{integer}, BPM): Influences the calculation of minimum samples between beats.  Set the expected Beats Per Minute (BPM) to reflect the average tempo of the audio files being analyzed.
     
-    \item \textbf{FILTER\_ORDER\_LIMIT} (\textit{integer}): Specifies the maximum order for the Butterworth filter. A higher order results in a sharper cutoff but may introduce phase distortion. Values typically range from 1 to 5.
+    \item \textbf{FILTER\_ORDER\_LIMIT} (\textit{integer}): Specifies the maximum order for the Butterworth filter.  A higher order will result in a sharper cutoff, but it may introduce phase distortion. Typically, values range from 1 to 5.
     
     \item \textbf{MIN\_PEAK\_MULTIPLIER} (\textit{integer}): Multiplier for determining the minimum peak height in the signal's energy profile, affecting peak detection sensitivity.
     
@@ -38,13 +38,13 @@ After adjusting these variables as needed, save your changes to \texttt{config.m
 
 \subsection{Running the Project}
 
-Once you have configured the project according to your preferences, you can run the beat detection analysis by executing the \texttt{main.m} script within a Unix-compatible shell environment. Navigate to the \texttt{src} directory of the project if you haven't already, and then use the following command to start the analysis:
+After configuring the project to your preferences, execute the beat detection analysis by running the \texttt{main.m} script in a Unix-compatible shell environment.  If you have not already, navigate to the \texttt{src/rhythmic\_inside} directory of the project and use the following command to start the analysis:
 
 \lstset{style=ShellStyle}
 \begin{lstlisting}[caption={Running the project}, label=lst]
 octave main.m [path/to/wav]
 \end{lstlisting}
 
-Replace \texttt{[path/to/wav]} with the actual path to the WAV file you wish to analyze. If you do not provide a path to a WAV file, Octave will open a file manager dialog, allowing you to select a WAV file interactively. This feature ensures that the project is accessible and easy to use, whether you prefer specifying files via the command line or selecting them through a graphical interface. \\
+Replace the placeholder \texttt{[path/to/wav]} with the actual file path of the WAV file that you want to analyze.  If you do not provide a file path, Octave will prompt you with a file manager dialog, allowing you to select a WAV file interactively. This feature ensures that the project is accessible and easy to use, whether you prefer specifying files via the command line or selecting them through a graphical interface.
 
-The script processes the selected audio file based on the configurations set in \texttt{config.m}, performs beat detection, and outputs the estimated BPM to the console. This streamlined execution process facilitates quick and efficient analysis of audio files, making "Rhythmic Inside" a practical tool for researchers, musicians, and anyone interested in beat detection technologies.
+The script processes the selected audio file according to the configurations set in \texttt{config.m}, performs beat detection, and outputs the estimated BPM to the console.  This streamlined process enables efficient analysis of audio files, making 'Rhythmic Inside' a practical tool for researchers, musicians, and anyone interested in beat detection technologies.

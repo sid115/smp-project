@@ -1,12 +1,12 @@
 \section{Signal Processing}
 
-The signal processing phase is pivotal in transforming the raw audio input into a form amenable for beat detection. This section details the preprocessing steps, including filtering and energy calculation, and explicates the rationale behind the choice of signal processing techniques.
+The signal processing phase is crucial in converting the raw audio input into a format suitable for beat detection. This section explains the preprocessing steps, such as filtering and energy calculation, and justifies the selection of signal processing techniques.
 
 \subsection{Preprocessing the Audio File}
 
 \subsubsection{Filtering}
 
-The preprocessing commences with applying a low-pass Butterworth filter to attenuate high-frequency components not pertinent to beat detection. This filter is favored for its flat passband, ensuring minimal distortion of relevant frequencies.
+The preprocessing process starts by applying a low-pass Butterworth filter to reduce high-frequency components that are not relevant to beat detection. This filter is preferred due to its flat passband, which ensures minimal distortion of relevant frequencies.
 
 \begin{itemize}
     \item \textbf{Cutoff Frequency:} The \texttt{CUTOFF\_FREQUENCY}, set to 300 Hz, delineates the frequency above which signals are attenuated, chosen to retain fundamental rhythmic components while simplifying the beat detection.
@@ -15,15 +15,29 @@ The preprocessing commences with applying a low-pass Butterworth filter to atten
 
 \subsubsection{Energy Signal Calculation}
 
-Following filtration, the signal's energy is computed over short, overlapping windows, transforming the waveform to highlight rhythmic patterns.
+After filtering, the energy of the signal is calculated by applying short, overlapping windows. This transformation emphasizes rhythmic patterns.
 
 \begin{itemize}
     \item \textbf{Windowing:} The signal is segmented into windows, within which the amplitude values are squared and summed to yield the energy.
     \item \textbf{Smoothing:} The energy signal is smoothed (using a window specified by \texttt{SMOOTHING\_WINDOW\_DURATION}, defaulting to 0.01 seconds) to reduce fluctuations and emphasize beats.
 \end{itemize}
 
-\subsection{Discussion on Signal Processing Techniques}
+\subsection{Visualization of Energy Calculation}
 
-These preprocessing steps serve to distill the audio signal, emphasizing rhythmic beats while mitigating irrelevant frequencies and noise. The Butterworth filter's selection, with its characteristic smooth frequency response, ensures that the filtration process preserves the integrity of beat-related frequencies. The subsequent energy calculation and smoothing further refine the signal, setting the stage for effective beat detection by transforming the audio into a representation where beats manifest as discernible energy peaks. \\
+The graph below illustrates the process of energy calculation and smoothing. It plots normalized energy against time, represented in samples per thousand. The blue line represents the original energy signal, which shows the raw energy levels derived from the audio file. The red line represents the smoothed energy signal, which is the result of applying a moving average filter to the original energy.
 
-Through these meticulous processing techniques, the project establishes a robust foundation for the reliable identification of beats across diverse music genres, underscoring its utility as a comprehensive beat detection tool.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{energy.png}
+    \caption{Normalized energy of the audio signal with original and smoothed energy.}
+\end{figure}
+
+\subsubsection{Effect of Moving Average Smoothing}
+
+The original energy signal is smoothed using the moving average technique to reduce short-term fluctuations and emphasize underlying trends. This is done by averaging the energy values within a specified window (\texttt{SMOOTHING\_WINDOW\_DURATION}) that moves across the signal. Each point in the smoothed signal represents the average energy of the surrounding points within the window, effectively minimizing the impact of transient spikes or drops in energy.
+
+The reason for smoothing the energy signal is to emphasize rhythmic patterns, which are crucial for precise beat detection. The moving average filter helps to identify significant peaks that correspond to the music's rhythm by reducing noise and highlighting sustained energy levels that indicate beats. This approach ensures that the subsequent beat detection process focuses on genuine rhythmic content rather than being misled by momentary energy changes.
+
+\subsection{Conclusion}
+
+The signal processing phase, which includes filtering and energy signal calculation, is crucial in converting raw audio into a format suitable for beat detection. The combination of low-pass filtering and energy smoothing prepares the audio signal by highlighting rhythmically significant patterns. The graph illustrates how the moving average filter smooths the energy signal, making rhythmic peaks more prominent and thus facilitating more reliable beat detection. Through these carefully selected processing steps, the project establishes a solid foundation for accurately detecting beats across various musical styles, demonstrating its effectiveness as an advanced beat detection system.

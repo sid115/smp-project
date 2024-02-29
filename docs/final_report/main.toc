@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {3.1}Folder Structure}{2}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Implementation Details}{3}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Modular Design and Flexibility}{3}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Configuration and Initial Setup}{3}{section.4}%
+\contentsline {section}{\numberline {4}Configuration and Initial Setup}{4}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Cloning the Repository}{4}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Editing the Configuration File}{4}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Running the Project}{5}{subsection.4.3}%
@@ -16,25 +16,39 @@
 \contentsline {subsection}{\numberline {5.1}Preprocessing the Audio File}{5}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}Filtering}{5}{subsubsection.5.1.1}%
 \contentsline {subsubsection}{\numberline {5.1.2}Energy Signal Calculation}{5}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Discussion on Signal Processing Techniques}{6}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Auto-correlation and Peak Detection}{6}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Auto-correlation to Identify Periodicity}{6}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Peak Detection for BPM Estimation}{6}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Discussion}{7}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Testing Framework}{7}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Preparation of Test Audio Files}{7}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Trimming WAV Files}{7}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Converting FLAC to WAV}{7}{subsubsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.2}Testing Script Usage}{7}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Test Cases and Methodology}{8}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Integration into Development}{8}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Statistical Analysis}{8}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Conclusion}{8}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Conclusion}{8}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Achievements}{9}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Challenges Faced}{9}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Future Work}{9}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Closing Remarks}{9}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Appendices}{9}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Appendix A: Source Code Listings}{9}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Appendix B: References}{17}{subsection.9.2}%
+\contentsline {subsection}{\numberline {5.2}Visualization of Energy Calculation}{6}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Effect of Moving Average Smoothing}{6}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.3}Conclusion}{6}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Auto-correlation and Peak Detection}{7}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Auto-correlation to Identify Periodicity}{7}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Overview of the \texttt {xcorr} Function Algorithm}{7}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Functionality}{7}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Core Algorithm}{7}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Parameters}{7}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Computational Approach}{8}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Output}{8}{subsubsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.3}Peak Detection}{8}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Overview of the \texttt {findpeaks} Function}{8}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Function Syntax}{8}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Parameters}{8}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}Algorithmic Approach}{8}{subsubsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.4}Outputs}{9}{subsubsection.6.4.4}%
+\contentsline {subsubsection}{\numberline {6.4.5}Usage Considerations}{9}{subsubsection.6.4.5}%
+\contentsline {subsection}{\numberline {6.5}Graphical Analysis}{9}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Decline of the ACF with Increasing Lag}{9}{subsubsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.6}Discussion}{10}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Testing Framework}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Preparation of Test Audio Files}{10}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Converting FLAC to WAV}{10}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Trimming WAV Files}{11}{subsubsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.2}Testing Script Usage}{11}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Test Cases and Methodology}{11}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Statistical Analysis and Visualization}{11}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Conclusion}{12}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Conclusion}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Challenges Faced}{13}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Future Work}{13}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Closing Remarks}{13}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Appendices}{14}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Appendix A: Source Code Listings}{14}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Appendix B: References}{22}{subsection.9.2}%

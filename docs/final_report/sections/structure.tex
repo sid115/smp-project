@@ -1,30 +1,30 @@
 \section{Project Structure and Implementation}
 
-The "Rhythmic Inside" project implements a sophisticated beat detection system using MATLAB/Octave, designed to analyze WAV audio files and estimate their Beats Per Minute (BPM). The implementation is structured across multiple \texttt{.m} files, each encapsulating a specific part of the processing pipeline, which collectively contribute to the project's functionality. This section describes the modular architecture and the role of each component within the system.
+The 'Rhythmic Inside' project utilizes a complex beat detection system in MATLAB/Octave to analyze WAV audio files and estimate their Beats Per Minute (BPM). The system is structured across multiple '.m' files, each encapsulating a specific part of the processing pipeline, which collectively contribute to the project's functionality. This section explains the modular architecture and the role of each component within the system.
 
 \subsection{Folder Structure}
-The project is organized into three main directories, reflecting the separation of source code, documentation, and additional assets:
+The project is divided into three primary directories, which reflect the separation of source code, documentation, and additional assets:
 \begin{itemize}
-    \item \textbf{src:} This directory houses all the source code and shell scripts necessary for running the beat detection algorithms. It includes individual \texttt{.m} files for each function in the processing pipeline, as well as the main script \texttt{main.m} which orchestrates the execution flow.
-    \item \textbf{assets:} Contains graphical resources, sample WAV files for testing, and output PDFs generated from the \texttt{docs} directory. This folder aids in both testing and demonstrating the project's capabilities.
-    \item \textbf{docs:} Stores the LaTeX source code for the project's documentation. It provides a comprehensive overview of the system, including its design, implementation details, and usage instructions.
+    \item \textbf{src:} This directory contains all the source code and shell scripts required to run the beat detection algorithms. It includes individual '.m' files for each function in the processing pipeline, as well as the main script \texttt{main.m} which manages the execution flow.
+    \item \textbf{assets:} This folder contains graphical resources, sample WAV files for testing, and output PDFs generated from the \texttt{docs} directory. It is designed to aid in both testing and demonstrating the project's capabilities.
+    \item \textbf{docs:} The LaTeX source code for the project's documentation is stored here. It offers a complete overview of the system, including its design, implementation details, and instructions for usage.
 \end{itemize}
 
 \subsection{Implementation Details}
-The source code within the \textbf{src} directory follows a modular design, with key components of the beat detection process implemented as separate functions:
+The source code in the \texttt{src/rhythmic\_inside} directory has a modular design, with essential components of the beat detection process implemented as separate functions:
 
 \begin{itemize}
-    \item \textbf{preprocess.m:} Handles the initial preprocessing of the audio signal, including conversion from stereo to mono and application of a low-pass filter to mitigate high-frequency noise.
-    \item \textbf{config.m:} A configuration script that defines global parameters used across various functions, such as filter specifications and threshold values.
-    \item \textbf{calculateEnergy.m:} Computes the energy signal from the preprocessed audio, facilitating the detection of rhythmic patterns by emphasizing signal intensity variations.
-    \item \textbf{autoCorrelation.m:} Applies an auto-correlation function to the energy signal to identify periodicities indicative of beats.
-    \item \textbf{detectPeaks.m:} Analyzes the auto-correlated signal to detect significant peaks, representing potential beats within the audio.
-    \item \textbf{calculateBPM.m:} Calculates the BPM based on the intervals between detected peaks, providing a numerical representation of the audio's rhythm.
+    \item \textbf{preprocess.m:} The audio signal undergoes initial preprocessing, which includes converting it from stereo to mono and applying a low-pass filter to reduce high-frequency noise.
+    \item \textbf{config.m:} A configuration script is used to define global parameters that are utilized across various functions. These parameters include filter specifications and threshold values.
+    \item \textbf{calculateEnergy.m:} The preprocessed audio is used to compute the energy signal, which highlights variations in signal intensity and facilitates the detection of rhythmic patterns.
+    \item \textbf{autoCorrelation.m:} Applies an auto-correlation function to the energy signal to identify periodicities that indicate beats.
+    \item \textbf{detectPeaks.m:} The auto-correlated signal is analyzed to detect significant peaks, which may represent potential beats within the audio.
+    \item \textbf{calculateBPM.m:} This function calculates the beats per minute (BPM) by analyzing the intervals between detected peaks in the audio signal.
 \end{itemize}
 
-The main script, \textbf{main.m}, integrates these components, orchestrating the entire beat detection process from file input through to BPM estimation. It checks for the necessary dependencies, reads the input WAV file, and sequentially invokes the aforementioned functions to process the signal and output the estimated BPM.
+The main script, \texttt{main.m}, integrates these components, orchestrating the entire beat detection process from file input through to BPM estimation. It checks for the necessary dependencies, reads the input WAV file, and sequentially invokes the aforementioned functions to process the signal and output the estimated BPM.
 
 \subsection{Modular Design and Flexibility}
-By structuring the project with each function in its own file, "Rhythmic Inside" achieves high modularity, allowing for easy updates, maintenance, and scalability. This design approach not only facilitates the understanding and debugging of individual components but also supports the extension of the project to incorporate new features or algorithms in the future. \\
+By structuring the project with each function in its own file, 'Rhythmic Inside' achieves high modularity, allowing for easy updates, maintenance, and scalability. This design approach not only facilitates the understanding and debugging of individual components but also supports the extension of the project to incorporate new features or algorithms in the future. \\
 
-In summary, the "Rhythmic Inside" project's organization and implementation strategy enable a robust and efficient beat detection system. The clear separation of concerns, combined with a thoughtful directory structure, ensures that the project is both manageable and adaptable to evolving requirements in the field of digital signal processing.
+In summary, the 'Rhythmic Inside' project's organization and implementation strategy enables a robust and efficient beat detection system. The clear separation of concerns, combined with a thoughtful directory structure, ensures that the project is both manageable and adaptable to evolving requirements in the field of digital signal processing.

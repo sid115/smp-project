@@ -1,1 +1,4 @@
 \babel@toc {english}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Normalized energy of the audio signal with original and smoothed energy.}}{6}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Normalized Auto-correlation Function (ACF) with detected peaks and dynamic threshold.}}{9}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Bland-Altman Plot visualizing the agreement between our BPM detection and \texttt {bpm-tools}.}}{12}{figure.3}%
