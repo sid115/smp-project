@@ -8,3 +8,4 @@ PLOTS_PREFIX = '../../assets/plots/'; % Prefix for the output plots
 PASSBAND_RIPPLE = 3; % Passband ripple in dB for the Butterworth filter
 SMOOTHING_WINDOW_DURATION = 0.01; % Duration of the smoothing window in seconds
 STOPBAND_ATTENUATION = 40; % Stopband attenuation in dB for the Butterworth filter
+LOWEST_NORMALIZED_CUTOFF_FREQUENCY = 0.05; % Lowest normalized cutoff frequency for the Butterworth filter

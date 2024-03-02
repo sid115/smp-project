@@ -52,13 +52,15 @@ Test in bulk with:
 
 ## TODO
 
-- dwt
+- high freq are not suitable for bpm detection. remove them from bpm analysis?
+- peak detection: needs to be improved. threshold?
 - spectogram
 - docs
-    - testing
-    - plots
-    - more technical details
     - api?
+    - plots
+        - bpm array
+        - how do we plot peaks in acf and energy now?
+    - adjust statistical analysis
 - presentation
     - slidev!
 

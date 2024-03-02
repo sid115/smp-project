@@ -1,0 +1,14 @@
+song | our bpm | bpm-tool's bpm
+001._Bennett_-_Vois_sur_ton_chemin_(Techno_Mix)_cut.wav |  | 139.562
+002._Udo_Lindenberg_-_Komet_cut.wav |  | 145.685
+003._Lana_Del_Rey_-_Blue_Skies_(From_The_New_Look_Soundtrack)_cut.wav |  | 95.981
+004._cassö_-_Prada_cut.wav |  | 138.229
+005._Miley_Cyrus_-_Flowers_cut.wav |  | 118.567
+006._Beyoncé_-_16_CARRIAGES_cut.wav |  | 125.315
+007._Kenya_Grace_-_Strangers_cut.wav |  | 113.964
+008._Paula_Hartmann_-_DLIT_(die_Liebe_ist_tot)_cut.wav |  | 132.878
+009._Peter_Fox_-_Zukunft_Pink_(feat._Inéz)_cut.wav |  | 118.014
+010._Dua_Lipa_-_Houdini_cut.wav |  | 116.992
+011._Pearl_Jam_-_Dark_Matter_cut.wav |  | 100.207
+012._Tate_McRae_-_greedy_cut.wav |  | 111.028
+013._Octavian_-_Mädchen_auf_dem_Pferd_cut.wav |  | 135.728
