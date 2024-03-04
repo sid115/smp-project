@@ -26,7 +26,8 @@ bpmArray = [];
 cutoff = 0.5;
 
 % Call the recursive filter function
-bpmArray = recursiveFilter(signal, fs, cutoff, bpmArray);
+iteration = 1; % Initialize the iteration counter
+[bpmArray, iteration] = recursiveFilter(signal, fs, cutoff, bpmArray, iteration);
 
 % TODO: plot the BPM array
 

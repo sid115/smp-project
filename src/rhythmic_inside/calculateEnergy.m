@@ -1,4 +1,4 @@
-function [smoothedEnergySignal] = calculateEnergy(signal, fs)
+function [smoothedEnergySignal] = calculateEnergy(signal, fs, iteration)
 
 % Include configuration file
 source('config.m');
@@ -24,7 +24,7 @@ xlabel('Samples / 1000');
 ylabel('Normalized Energy');
 title('Energy Signal Before and After Smoothing');
 legend('Original Energy Signal', 'Smoothed Energy Signal');
-print(fig, strcat(PLOTS_PREFIX, 'energy.png'), '-dpng'); % Save plot
+print(fig, strcat(PLOTS_PREFIX, 'energy', num2str(iteration), '.png'), '-dpng'); % Save plot
 hold off;
 close(fig);
 

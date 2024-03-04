@@ -1,4 +1,4 @@
-function [filteredPeaks, filteredLocations] = detectPeaks(acf, lag, fs)
+function [filteredPeaks, filteredLocations] = detectPeaks(acf, lag, fs, iteration)
 
 % Include configuration file
 source('config.m');
@@ -54,7 +54,7 @@ xlabel('Lag / s');
 ylabel('ACF');
 title('Detected Peaks on ACF with Dynamic Threshold');
 legend('ACF', 'Filtered Detected Peaks', 'Dynamic Threshold');
-print(fig, strcat(PLOTS_PREFIX, 'peaks.png'), '-dpng'); % Save plot
+print(fig, strcat(PLOTS_PREFIX, 'peaks', num2str(iteration), '.png'), '-dpng'); % Save plot
 close(fig);
 
 end
