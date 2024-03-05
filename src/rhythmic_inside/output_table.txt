@@ -1,2 +1,3 @@
 song | our bpm | bpm-tool's bpm
-001._Bennett_-_Vois_sur_ton_chemin_(Techno_Mix)_cut.wav | 126.1688 | 139.562
+001._Bennett_-_Vois_sur_ton_chemin_(Techno_Mix)_cut.wav | 130.365 | 139.562
+002._Udo_Lindenberg_-_Komet_cut.wav | 120.365 | 145.685

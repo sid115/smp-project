@@ -29,8 +29,6 @@ cutoff = 0.5;
 iteration = 1; % Initialize the iteration counter
 [bpmArray, iteration] = recursiveFilter(signal, fs, cutoff, bpmArray, iteration);
 
-% TODO: plot the BPM array
-
 % Calculate the average BPM from the collected BPMs
 averageBPM = mean(bpmArray);
 

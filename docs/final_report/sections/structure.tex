@@ -1,6 +1,6 @@
 \section{Project Structure and Implementation}
 
-The 'Rhythmic Inside' project utilizes a complex beat detection system in MATLAB/Octave to analyze WAV audio files and estimate their Beats Per Minute (BPM). The system is structured across multiple '.m' files, each encapsulating a specific part of the processing pipeline, which collectively contribute to the project's functionality. This section explains the modular architecture and the role of each component within the system.
+The 'Rhythmic Inside' project utilizes a complex beat detection system in MATLAB/Octave to analyze WAV audio files and estimate their Beats Per Minute (BPM). The system is structured across multiple '.m' files, each encapsulating a specific part of the processing pipeline, which collectively contribute to the project's functionality. This section explains the modular architecture and the role of each component within the system. \footnote{The source code for this project can be found at: \url{https://github.com/sid115/smp-project}}
 
 \subsection{Folder Structure}
 The project is divided into three primary directories, which reflect the separation of source code, documentation, and additional assets:
@@ -20,9 +20,13 @@ The source code in the \texttt{src/rhythmic\_inside} directory has a modular des
     \item \textbf{autoCorrelation.m:} Applies an auto-correlation function to the energy signal to identify periodicities that indicate beats.
     \item \textbf{detectPeaks.m:} The auto-correlated signal is analyzed to detect significant peaks, which may represent potential beats within the audio.
     \item \textbf{calculateBPM.m:} This function calculates the beats per minute (BPM) by analyzing the intervals between detected peaks in the audio signal.
+    \item \textbf{customFilter.m:} This function applies a custom-designed Butterworth filter to an audio signal, which separates it into two signals with high-pass or low-pass characteristics. One signal is a high-pass version, and the other is a low-pass version.
+    \item \textbf{processSignalForBPM.m:} Calls the \texttt{calculateEnergy}, \texttt{autoCorrelation}, \texttt{detectPeaks}, and \texttt{calculateBPM} functions to process the audio signal and identify potential beats.
+    \item \textbf{recursiveFilter.m:} Recursively calls \texttt{customFilter} to divide an audio signal into a high-pass and low-pass version until the desired lowest frequency is reached. The resulting frequency bands are then processed by \texttt{processSignalforBPM}.
+    \item \textbf{selectWAV:} Opens a graphical user interface (GUI) dialog to prompt the user to select a WAV file and returns the full file path of the selected WAV file.
 \end{itemize}
 
-The main script, \texttt{main.m}, integrates these components, orchestrating the entire beat detection process from file input through to BPM estimation. It checks for the necessary dependencies, reads the input WAV file, and sequentially invokes the aforementioned functions to process the signal and output the estimated BPM.
+The \texttt{main.m} script serves as the entry point for this application and integrates the components listed above. The process starts by sourcing the \texttt{config.m} script to define global parameters, such as filter specifications and threshold values. If a WAV file path is provided as an argument, it will be used; otherwise, the user will be prompted to select a file through a graphical user interface facilitated by \texttt{selectWAV}. Before analysis, the script loads the required 'signal' package to utilize advanced signal processing functions. The audio file is then read, and its signal is preprocessed and analyzed through a series of function calls, including a recursive filtering process called \texttt{recursiveFilter}. The iterative method accumulates BPM values from different frequency bands, and the script concludes by calculating and displaying the average BPM of the input audio signal.
 
 \subsection{Modular Design and Flexibility}
 By structuring the project with each function in its own file, 'Rhythmic Inside' achieves high modularity, allowing for easy updates, maintenance, and scalability. This design approach not only facilitates the understanding and debugging of individual components but also supports the extension of the project to incorporate new features or algorithms in the future. \\

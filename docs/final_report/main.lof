@@ -1,4 +1,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Normalized energy of the audio signal with original and smoothed energy.}}{6}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Normalized Auto-correlation Function (ACF) with detected peaks and dynamic threshold.}}{9}{figure.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Normalized Auto-correlation Function (ACF) with detected peaks and dynamic threshold.}}{10}{figure.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Bland-Altman Plot visualizing the agreement between our BPM detection and \texttt {bpm-tools}.}}{12}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Normalized Autocorrelation Function Peaks Across Frequency Bands of Song 4: frequency band 0\%-12.5\%}}{15}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Normalized Autocorrelation Function Peaks Across Frequency Bands of Song 4: frequency band 12.5\%-25\%}}{16}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Normalized Autocorrelation Function Peaks Across Frequency Bands of Song 4: frequency band 25\%-50\%}}{16}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Normalized Autocorrelation Function Peaks Across Frequency Bands of Song 4: frequency band 50\%-100\%}}{17}{figure.7}%

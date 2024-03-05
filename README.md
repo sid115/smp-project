@@ -50,20 +50,6 @@ Test in bulk with:
 ./testBulk.sh /path/to/wavs
 ```
 
-## TODO
-
-- high freq are not suitable for bpm detection. remove them from bpm analysis?
-- peak detection: needs to be improved. threshold?
-- spectogram
-- docs
-    - api?
-    - plots
-        - bpm array
-        - how do we plot peaks in acf and energy now?
-    - adjust statistical analysis
-- presentation
-    - slidev!
-
 ## Deadlines / Dates
 
 Date | Appointment
@@ -71,6 +57,6 @@ Date | Appointment
 2023-12-15 | Consultation Hour
 2023-12-21 | Project Plan
 2024-01-19 | Interim Report
-2024-03-07 | Final Report
+2024-03-04 | Final Report
 
 We hold a weekly meeting every Tuesday from 11 am to 3 pm.

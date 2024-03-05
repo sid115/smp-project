@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.26)  29 FEB 2024 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.26)  5 MAR 2024 03:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,77 +608,96 @@ File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
+(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip71
+\LTright=\skip72
+\LTpre=\skip73
+\LTpost=\skip74
+\LTchunksize=\count313
+\LTcapwidth=\dimen188
+\LT@head=\box63
+\LT@firsthead=\box64
+\LT@foot=\box65
+\LT@lastfoot=\box66
+\LT@gbox=\box67
+\LT@cols=\count314
+\LT@rows=\count315
+\c@LT@tables=\count316
+\c@LT@chunks=\count317
+\LT@p@ftn=\toks46
+)
+(/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count318
+\rotFPtop=\skip75
+\rotFPbot=\skip76
+\rot@float@box=\box68
+\rot@mess@toks=\toks47
+)
 (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen188
-\lightrulewidth=\dimen189
-\cmidrulewidth=\dimen190
-\belowrulesep=\dimen191
-\belowbottomsep=\dimen192
-\aboverulesep=\dimen193
-\abovetopsep=\dimen194
-\cmidrulesep=\dimen195
-\cmidrulekern=\dimen196
-\defaultaddspace=\dimen197
-\@cmidla=\count313
-\@cmidlb=\count314
-\@aboverulesep=\dimen198
-\@belowrulesep=\dimen199
-\@thisruleclass=\count315
-\@lastruleclass=\count316
-\@thisrulewidth=\dimen256
+\heavyrulewidth=\dimen189
+\lightrulewidth=\dimen190
+\cmidrulewidth=\dimen191
+\belowrulesep=\dimen192
+\belowbottomsep=\dimen193
+\aboverulesep=\dimen194
+\abovetopsep=\dimen195
+\cmidrulesep=\dimen196
+\cmidrulekern=\dimen197
+\defaultaddspace=\dimen198
+\@cmidla=\count319
+\@cmidlb=\count320
+\@aboverulesep=\dimen199
+\@belowrulesep=\dimen256
+\@thisruleclass=\count321
+\@lastruleclass=\count322
+\@thisrulewidth=\dimen257
 )
 (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen257
-\ar@mcellbox=\box63
-\extrarowheight=\dimen258
-\NC@list=\toks46
-\extratabsurround=\skip71
-\backup@length=\skip72
-\ar@cellbox=\box64
+\col@sep=\dimen258
+\ar@mcellbox=\box69
+\extrarowheight=\dimen259
+\NC@list=\toks48
+\extratabsurround=\skip77
+\backup@length=\skip78
+\ar@cellbox=\box70
 )
-\everycr=\toks47
-\minrowclearance=\skip73
-\rownum=\count317
-)
-(/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count318
-\rotFPtop=\skip74
-\rotFPbot=\skip75
-\rot@float@box=\box65
-\rot@mess@toks=\toks48
+\everycr=\toks49
+\minrowclearance=\skip79
+\rownum=\count323
 )
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip76
-\multirow@cntb=\count319
-\multirow@dima=\skip77
-\bigstrutjot=\dimen259
+\multirow@colwidth=\skip80
+\multirow@cntb=\count324
+\multirow@dima=\skip81
+\bigstrutjot=\dimen260
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count320
-\lst@gtempboxa=\box66
-\lst@token=\toks49
-\lst@length=\count321
-\lst@currlwidth=\dimen260
-\lst@column=\count322
-\lst@pos=\count323
-\lst@lostspace=\dimen261
-\lst@width=\dimen262
-\lst@newlines=\count324
-\lst@lineno=\count325
-\lst@maxwidth=\dimen263
+\lst@mode=\count325
+\lst@gtempboxa=\box71
+\lst@token=\toks50
+\lst@length=\count326
+\lst@currlwidth=\dimen261
+\lst@column=\count327
+\lst@pos=\count328
+\lst@lostspace=\dimen262
+\lst@width=\dimen263
+\lst@newlines=\count329
+\lst@lineno=\count330
+\lst@maxwidth=\dimen264
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count326
-\lst@skipnumbers=\count327
-\lst@framebox=\box67
+\c@lstnumber=\count331
+\lst@skipnumbers=\count332
+\lst@framebox=\box72
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
@@ -690,68 +709,68 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count328
+\lrq@indent=\count333
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count329
-\c@listtotal=\count330
-\c@listcount=\count331
-\c@liststart=\count332
-\c@liststop=\count333
-\c@citecount=\count334
-\c@citetotal=\count335
-\c@multicitecount=\count336
-\c@multicitetotal=\count337
-\c@instcount=\count338
-\c@maxnames=\count339
-\c@minnames=\count340
-\c@maxitems=\count341
-\c@minitems=\count342
-\c@citecounter=\count343
-\c@maxcitecounter=\count344
-\c@savedcitecounter=\count345
-\c@uniquelist=\count346
-\c@uniquename=\count347
-\c@refsection=\count348
-\c@refsegment=\count349
-\c@maxextratitle=\count350
-\c@maxextratitleyear=\count351
-\c@maxextraname=\count352
-\c@maxextradate=\count353
-\c@maxextraalpha=\count354
-\c@abbrvpenalty=\count355
-\c@highnamepenalty=\count356
-\c@lownamepenalty=\count357
-\c@maxparens=\count358
-\c@parenlevel=\count359
-\blx@tempcnta=\count360
-\blx@tempcntb=\count361
-\blx@tempcntc=\count362
-\c@blx@maxsection=\count363
-\blx@maxsegment@0=\count364
-\blx@notetype=\count365
-\blx@parenlevel@text=\count366
-\blx@parenlevel@foot=\count367
-\blx@sectionciteorder@0=\count368
-\blx@sectionciteorderinternal@0=\count369
-\blx@entrysetcounter=\count370
-\blx@biblioinstance=\count371
-\labelnumberwidth=\skip78
-\labelalphawidth=\skip79
-\biblabelsep=\skip80
-\bibitemsep=\skip81
-\bibnamesep=\skip82
-\bibinitsep=\skip83
-\bibparsep=\skip84
-\bibhang=\skip85
+\c@tabx@nest=\count334
+\c@listtotal=\count335
+\c@listcount=\count336
+\c@liststart=\count337
+\c@liststop=\count338
+\c@citecount=\count339
+\c@citetotal=\count340
+\c@multicitecount=\count341
+\c@multicitetotal=\count342
+\c@instcount=\count343
+\c@maxnames=\count344
+\c@minnames=\count345
+\c@maxitems=\count346
+\c@minitems=\count347
+\c@citecounter=\count348
+\c@maxcitecounter=\count349
+\c@savedcitecounter=\count350
+\c@uniquelist=\count351
+\c@uniquename=\count352
+\c@refsection=\count353
+\c@refsegment=\count354
+\c@maxextratitle=\count355
+\c@maxextratitleyear=\count356
+\c@maxextraname=\count357
+\c@maxextradate=\count358
+\c@maxextraalpha=\count359
+\c@abbrvpenalty=\count360
+\c@highnamepenalty=\count361
+\c@lownamepenalty=\count362
+\c@maxparens=\count363
+\c@parenlevel=\count364
+\blx@tempcnta=\count365
+\blx@tempcntb=\count366
+\blx@tempcntc=\count367
+\c@blx@maxsection=\count368
+\blx@maxsegment@0=\count369
+\blx@notetype=\count370
+\blx@parenlevel@text=\count371
+\blx@parenlevel@foot=\count372
+\blx@sectionciteorder@0=\count373
+\blx@sectionciteorderinternal@0=\count374
+\blx@entrysetcounter=\count375
+\blx@biblioinstance=\count376
+\labelnumberwidth=\skip82
+\labelalphawidth=\skip83
+\biblabelsep=\skip84
+\bibitemsep=\skip85
+\bibnamesep=\skip86
+\bibinitsep=\skip87
+\bibparsep=\skip88
+\bibhang=\skip89
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language9
-\c@mincomprange=\count372
-\c@maxcomprange=\count373
-\c@mincompwidth=\count374
+\c@mincomprange=\count377
+\c@maxcomprange=\count378
+\c@mincompwidth=\count379
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -762,88 +781,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count375
-\c@savedafterword=\count376
-\c@annotator=\count377
-\c@savedannotator=\count378
-\c@author=\count379
-\c@savedauthor=\count380
-\c@bookauthor=\count381
-\c@savedbookauthor=\count382
-\c@commentator=\count383
-\c@savedcommentator=\count384
-\c@editor=\count385
-\c@savededitor=\count386
-\c@editora=\count387
-\c@savededitora=\count388
-\c@editorb=\count389
-\c@savededitorb=\count390
-\c@editorc=\count391
-\c@savededitorc=\count392
-\c@foreword=\count393
-\c@savedforeword=\count394
-\c@holder=\count395
-\c@savedholder=\count396
-\c@introduction=\count397
-\c@savedintroduction=\count398
-\c@namea=\count399
-\c@savednamea=\count400
-\c@nameb=\count401
-\c@savednameb=\count402
-\c@namec=\count403
-\c@savednamec=\count404
-\c@translator=\count405
-\c@savedtranslator=\count406
-\c@shortauthor=\count407
-\c@savedshortauthor=\count408
-\c@shorteditor=\count409
-\c@savedshorteditor=\count410
-\c@labelname=\count411
-\c@savedlabelname=\count412
-\c@institution=\count413
-\c@savedinstitution=\count414
-\c@lista=\count415
-\c@savedlista=\count416
-\c@listb=\count417
-\c@savedlistb=\count418
-\c@listc=\count419
-\c@savedlistc=\count420
-\c@listd=\count421
-\c@savedlistd=\count422
-\c@liste=\count423
-\c@savedliste=\count424
-\c@listf=\count425
-\c@savedlistf=\count426
-\c@location=\count427
-\c@savedlocation=\count428
-\c@organization=\count429
-\c@savedorganization=\count430
-\c@origlocation=\count431
-\c@savedoriglocation=\count432
-\c@origpublisher=\count433
-\c@savedorigpublisher=\count434
-\c@publisher=\count435
-\c@savedpublisher=\count436
-\c@language=\count437
-\c@savedlanguage=\count438
-\c@origlanguage=\count439
-\c@savedoriglanguage=\count440
-\c@pageref=\count441
-\c@savedpageref=\count442
-\shorthandwidth=\skip86
-\shortjournalwidth=\skip87
-\shortserieswidth=\skip88
-\shorttitlewidth=\skip89
-\shortauthorwidth=\skip90
-\shorteditorwidth=\skip91
-\locallabelnumberwidth=\skip92
-\locallabelalphawidth=\skip93
-\localshorthandwidth=\skip94
-\localshortjournalwidth=\skip95
-\localshortserieswidth=\skip96
-\localshorttitlewidth=\skip97
-\localshortauthorwidth=\skip98
-\localshorteditorwidth=\skip99
+\c@afterword=\count380
+\c@savedafterword=\count381
+\c@annotator=\count382
+\c@savedannotator=\count383
+\c@author=\count384
+\c@savedauthor=\count385
+\c@bookauthor=\count386
+\c@savedbookauthor=\count387
+\c@commentator=\count388
+\c@savedcommentator=\count389
+\c@editor=\count390
+\c@savededitor=\count391
+\c@editora=\count392
+\c@savededitora=\count393
+\c@editorb=\count394
+\c@savededitorb=\count395
+\c@editorc=\count396
+\c@savededitorc=\count397
+\c@foreword=\count398
+\c@savedforeword=\count399
+\c@holder=\count400
+\c@savedholder=\count401
+\c@introduction=\count402
+\c@savedintroduction=\count403
+\c@namea=\count404
+\c@savednamea=\count405
+\c@nameb=\count406
+\c@savednameb=\count407
+\c@namec=\count408
+\c@savednamec=\count409
+\c@translator=\count410
+\c@savedtranslator=\count411
+\c@shortauthor=\count412
+\c@savedshortauthor=\count413
+\c@shorteditor=\count414
+\c@savedshorteditor=\count415
+\c@labelname=\count416
+\c@savedlabelname=\count417
+\c@institution=\count418
+\c@savedinstitution=\count419
+\c@lista=\count420
+\c@savedlista=\count421
+\c@listb=\count422
+\c@savedlistb=\count423
+\c@listc=\count424
+\c@savedlistc=\count425
+\c@listd=\count426
+\c@savedlistd=\count427
+\c@liste=\count428
+\c@savedliste=\count429
+\c@listf=\count430
+\c@savedlistf=\count431
+\c@location=\count432
+\c@savedlocation=\count433
+\c@organization=\count434
+\c@savedorganization=\count435
+\c@origlocation=\count436
+\c@savedoriglocation=\count437
+\c@origpublisher=\count438
+\c@savedorigpublisher=\count439
+\c@publisher=\count440
+\c@savedpublisher=\count441
+\c@language=\count442
+\c@savedlanguage=\count443
+\c@origlanguage=\count444
+\c@savedoriglanguage=\count445
+\c@pageref=\count446
+\c@savedpageref=\count447
+\shorthandwidth=\skip90
+\shortjournalwidth=\skip91
+\shortserieswidth=\skip92
+\shorttitlewidth=\skip93
+\shortauthorwidth=\skip94
+\shorteditorwidth=\skip95
+\locallabelnumberwidth=\skip96
+\locallabelalphawidth=\skip97
+\localshorthandwidth=\skip98
+\localshortjournalwidth=\skip99
+\localshortserieswidth=\skip100
+\localshorttitlewidth=\skip101
+\localshortauthorwidth=\skip102
+\localshorteditorwidth=\skip103
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -855,19 +874,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count443
-\c@textcitetotal=\count444
-\c@textcitemaxnames=\count445
-\c@biburlbigbreakpenalty=\count446
-\c@biburlbreakpenalty=\count447
-\c@biburlnumpenalty=\count448
-\c@biburlucpenalty=\count449
-\c@biburllcpenalty=\count450
+\c@textcitecount=\count448
+\c@textcitetotal=\count449
+\c@textcitemaxnames=\count450
+\c@biburlbigbreakpenalty=\count451
+\c@biburlbreakpenalty=\count452
+\c@biburlnumpenalty=\count453
+\c@biburlucpenalty=\count454
+\c@biburllcpenalty=\count455
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count451
+\c@smartand=\count456
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -879,8 +898,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count452
-\c@bbx:relatedtotal=\count453
+\c@bbx:relatedcount=\count457
+\c@bbx:relatedtotal=\count458
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -913,8 +932,8 @@ Package: expl3 2023-02-22 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count454
-\l__pdf_internal_box=\box68
+\l__color_backend_stack_int=\count459
+\l__pdf_internal_box=\box73
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2023-02-22 L3 programming layer (loader) 
@@ -1010,17 +1029,17 @@ LaTeX Font Info:    ... okay on input line 7.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count455
-\scratchdimen=\dimen264
-\scratchbox=\box69
-\nofMPsegments=\count456
-\nofMParguments=\count457
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count458
-\MPscratchDim=\dimen265
-\MPnumerator=\count459
-\makeMPintoPDFobject=\count460
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count460
+\scratchdimen=\dimen265
+\scratchbox=\box74
+\nofMPsegments=\count461
+\nofMParguments=\count462
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count463
+\MPscratchDim=\dimen266
+\MPnumerator=\count464
+\makeMPintoPDFobject=\count465
+\everyMPtoPDFconversion=\toks52
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1048,7 +1067,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-\c@lstlisting=\count461
+\c@lstlisting=\count466
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1120,7 +1139,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 ...Cases and Methodology}{11}{subsection.7.3}
+l.45 ...Cases and Methodology}{12}{subsection.7.3}
                                                   % [1])
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1143,131 +1162,210 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 13.
 )
-(./sections/structure.tex [2]
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-) (./sections/config.tex [3]
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) [4])
-(./sections/signal_processing.tex
-Overfull \hbox (73.76578pt too wide) in paragraph at lines 22--23
-[]\T1/lmr/bx/n/12 Smoothing: \T1/lmr/m/n/12 The en-ergy sig-nal is smoothed (us
--ing a win-dow spec-i-fied by \T1/lmtt/m/n/12 SMOOTHING_WINDOW_DURATION\T1/lmr/
-m/n/12 ,
- []
-
-[5]
-<./images//energy.png, id=324, 875.27pt x 656.4525pt>
-File: ./images//energy.png Graphic file (type png)
-<use ./images//energy.png>
-Package pdftex.def Info: ./images//energy.png  used on input line 31.
-(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
-) (./sections/acf_peak.tex [6
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1 \section
-            {Auto-correlation and Peak Detection} <./images//energy.png (PNG co
-py)>]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 9.
- [7{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-di
-st/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ma
-thex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-[8]
-<./images//peaks.png, id=345, 875.27pt x 656.4525pt>
-File: ./images//peaks.png Graphic file (type png)
-<use ./images//peaks.png>
-Package pdftex.def Info: ./images//peaks.png  used on input line 93.
-(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
- [9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.100 
-       <./images//peaks.png (PNG copy)>]) (./sections/testing.tex
+(./sections/structure.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 3.
- [10]
-<./images//bland_altman_plot.png, id=367, 875.27pt x 656.4525pt>
+ [2]
+Overfull \hbox (14.78513pt too wide) in paragraph at lines 24--25
+[]\T1/lmr/bx/n/12 processSignalForBPM.m: \T1/lmr/m/n/12 Calls the \T1/lmtt/m/n/
+12 calculateEnergy\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 autoCorrelation\T1/lmr/m/n/1
+2 , \T1/lmtt/m/n/12 detectPeaks\T1/lmr/m/n/12 ,
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+) (./sections/config.tex (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) [4])
+(./sections/signal_processing.tex [5]
+Overfull \hbox (73.76578pt too wide) in paragraph at lines 22--23
+[]\T1/lmr/bx/n/12 Smoothing: \T1/lmr/m/n/12 The en-ergy sig-nal is smoothed (us
+-ing a win-dow spec-i-fied by \T1/lmtt/m/n/12 SMOOTHING_WINDOW_DURATION\T1/lmr/
+m/n/12 ,
+ []
+
+<./images//energy.png, id=365, 875.27pt x 656.4525pt>
+File: ./images//energy.png Graphic file (type png)
+<use ./images//energy.png>
+Package pdftex.def Info: ./images//energy.png  used on input line 31.
+(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.38 
+      <./images//energy.png (PNG copy)>]) (./sections/acf_peak.tex
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 9.
+ [7{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [8{/usr/share/texm
+f-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/l
+m-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+<./images//peaks.png, id=386, 875.27pt x 656.4525pt>
+File: ./images//peaks.png Graphic file (type png)
+<use ./images//peaks.png>
+Package pdftex.def Info: ./images//peaks.png  used on input line 93.
+(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
+ [9])
+(./sections/testing.tex [10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.4 
+     <./images//peaks.png (PNG copy)>] [11]
+<./images//bland_altman_plot.png, id=413, 875.27pt x 656.4525pt>
 File: ./images//bland_altman_plot.png Graphic file (type png)
 <use ./images//bland_altman_plot.png>
 Package pdftex.def Info: ./images//bland_altman_plot.png  used on input line 52
 .
 (pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
- [11])
-(./sections/conclusion.tex [12
+ [12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.4 
-     <./images//bland_altman_plot.png (PNG copy)>]) (./sections/appendices.tex
-[13] (../../src/rhythmic_inside/main.m [14]) [15]
-(../../src/rhythmic_inside/preprocess.m) [16]
-(../../src/rhythmic_inside/calculateEnergy.m) [17]
-(../../src/rhythmic_inside/autoCorrelation.m) [18]
-(../../src/rhythmic_inside/detectPeaks.m [19]) [20]
-(../../src/rhythmic_inside/calculateBPM.m) [21]
-(../../src/rhythmic_inside/config.m)
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+l.57 
+      <./images//bland_altman_plot.png (PNG copy)>]) (./sections/dwt.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-) [22]
+[13]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 27.
 
-LaTeX Warning: Empty bibliography on input line 43.
+Overfull \hbox (41.59947pt too wide) in paragraph at lines 27--36
+ [][] 
+ []
+
+[14
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.44 
+     ]
+<./images//peaks1.png, id=430, 875.27pt x 656.4525pt>
+File: ./images//peaks1.png Graphic file (type png)
+<use ./images//peaks1.png>
+Package pdftex.def Info: ./images//peaks1.png  used on input line 47.
+(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
+<./images//peaks2.png, id=431, 875.27pt x 656.4525pt>
+File: ./images//peaks2.png Graphic file (type png)
+<use ./images//peaks2.png>
+Package pdftex.def Info: ./images//peaks2.png  used on input line 53.
+(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
+ [15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.56 
+      <./images//peaks1.png (PNG copy)>]
+<./images//peaks3.png, id=437, 875.27pt x 656.4525pt>
+File: ./images//peaks3.png Graphic file (type png)
+<use ./images//peaks3.png>
+Package pdftex.def Info: ./images//peaks3.png  used on input line 59.
+(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
+<./images//peaks4.png, id=438, 875.27pt x 656.4525pt>
+File: ./images//peaks4.png Graphic file (type png)
+<use ./images//peaks4.png>
+Package pdftex.def Info: ./images//peaks4.png  used on input line 65.
+(pdftex.def)             Requested size: 386.95897pt x 290.22229pt.
+ [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.68 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.68 
+      <./images//peaks2.png (PNG copy)> <./images//peaks3.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+[17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.74 
+      <./images//peaks4.png (PNG copy)>]) (./sections/conclusion.tex [18])
+(./sections/appendices.tex (../../src/rhythmic_inside/main.m [19]) [20]
+(../../src/rhythmic_inside/calculateEnergy.m) [21]
+(../../src/rhythmic_inside/autoCorrelation.m) [22]
+(../../src/rhythmic_inside/detectPeaks.m [23]) [24]
+(../../src/rhythmic_inside/calculateBPM.m) [25]
+(../../src/rhythmic_inside/config.m) [26]
+(../../src/rhythmic_inside/customFilter.m) [27]
+(../../src/rhythmic_inside/processSignalForBPM.m) [28]
+(../../src/rhythmic_inside/recursiveFilter.m) [29]
+(../../src/rhythmic_inside/selectWAV.m) [30]) [31]
+
+LaTeX Warning: Empty bibliography on input line 44.
 
 (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [23] (./main.aux)
+ (./main.lot)
+\tf@lot=\write8
+\openout8 = `main.lot'.
+
+ [32] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8A9D46DD541788B6EC83240635CEF263;9051.
+(rerunfilecheck)             Checksum: 02B14460F2CD92FFFF5780BA17F4802B;10078.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26214 strings out of 477932
- 454446 string characters out of 5837865
- 2159388 words of memory out of 5000000
- 45636 multiletter control sequences out of 15000+600000
- 579646 words of font info for 84 fonts, out of 8000000 for 9000
+ 26496 strings out of 477932
+ 459113 string characters out of 5837865
+ 2161388 words of memory out of 5000000
+ 45802 multiletter control sequences out of 15000+600000
+ 586654 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 109i,12n,106p,797b,2263s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dis
-t/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm
-/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/
-texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr
-/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb><
-/usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/f
-onts/type1/public/lm/lmro12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lm
-sy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/te
-xmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/lm/lmtt12.pfb>
-Output written on main.pdf (26 pages, 530571 bytes).
+ 109i,12n,106p,1158b,2263s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm
+/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share
+/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/
+public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></us
+r/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts
+/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb
+></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/f
+onts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lm
+ro12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (35 pages, 760083 bytes).
 PDF statistics:
- 775 PDF objects out of 1000 (max. 8388607)
- 701 compressed objects within 8 object streams
- 294 named destinations out of 1000 (max. 500000)
- 452 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 963 PDF objects out of 1000 (max. 8388607)
+ 873 compressed objects within 9 object streams
+ 387 named destinations out of 1000 (max. 500000)
+ 528 words of extra memory for PDF output out of 10000 (max. 10000000)
 
